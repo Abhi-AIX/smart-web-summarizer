@@ -1,6 +1,9 @@
+import os
 import streamlit as st
-from web_scraper import Summarize, SaveResult
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+from web_scraper import Summarize, SaveResult
+
+
 
 st.title("Smart Web Summarizer")
 
