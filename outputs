@@ -1,0 +1,129 @@
+normal without mentioning anything
+ResponseUsage(input_tokens=12413, input_tokens_details=InputTokensDetails(cache_write_tokens=0, cached_tokens=12410),
+output_tokens=244, output_tokens_details=OutputTokensDetails(reasoning_tokens=97), total_tokens=12657)
+
+reasoning={"effort": "xhigh", "mode": "pro"},  :
+ResponseUsage(input_tokens=40822, input_tokens_details=InputTokensDetails(cache_write_tokens=0, cached_tokens=12410), 
+output_tokens=3683, output_tokens_details=OutputTokensDetails(reasoning_tokens=3379), total_tokens=44505)
+
+reasoning={"effort": "low", "mode": "pro"},
+ResponseUsage(input_tokens=39136, input_tokens_details=InputTokensDetails(cache_write_tokens=0, cached_tokens=12410), 
+output_tokens=761, output_tokens_details=OutputTokensDetails(reasoning_tokens=405), total_tokens=39897)
+
+
+reasoning={"effort": "low", "mode": "standard"},
+ResponseUsage(input_tokens=12413, input_tokens_details=InputTokensDetails(cache_write_tokens=0, cached_tokens=12410), 
+output_tokens=228, output_tokens_details=OutputTokensDetails(reasoning_tokens=46), total_tokens=12641)
+
+
+
+reasoning={"effort": "low", "mode": "standard"},
+
+
+enter url: https://en.wikipedia.org/wiki/Kangaroo
+API call took 3.2341480255126953 seconds.
+ResponseUsage(input_tokens=12413, input_tokens_details=InputTokensDetails(cache_write_tokens=0, cached_tokens=12410), output_tokens=182, output_tokens_details=OutputTokensDetails(reasoning_tokens=0), total_tokens=12595)
+Key Points:
+1. Kangaroos are marsupials native to Australia and New Guinea.
+2. The four commonly recognized kangaroo species are red, eastern grey, western grey, and antilopine.
+3. Kangaroos use powerful hind legs for hopping and their tails for balance and propulsion.
+4. Kangaroos are culturally significant in Australia and appear on national emblems, currency, and logos.
+5. Wild kangaroos are harvested for meat and hides, and frequently collide with vehicles.
+
+Summary Sentences:
+Kangaroos are the largest members of the macropod family.
+Their diets vary by species, but all are herbivorous.
+Females raise joeys in pouches and can pause embryo development.
+Kangaroos live socially in groups and communicate through scent and behavior.    
+Human activity influences kangaroo populations, management, and welfare.
+(webscraper) PS C:\AI Projects\ai-engineering> 
+
+
+API call took 5.972748279571533 seconds.
+ResponseUsage(input_tokens=12413, input_tokens_details=InputTokensDetails(cache_write_tokens=0, cached_tokens=12410), output_tokens=178, output_tokens_details=OutputTokensDetails(reasoning_tokens=0), total_tokens=12591)
+Key Points:
+1. Kangaroos are Australian and New Guinean marsupials, with four commonly recognized large species.
+2. They are distinguished informally from wallabies and wallaroos mainly by size.
+3. Kangaroos hop efficiently, eat plants, and have specialized reproductive adaptations.
+4. They are culturally significant in Australia and provide meat and hides.      
+5. Human activities affect kangaroos through harvesting, habitat change, and vehicle collisions.
+
+Summary Sentences:
+Kangaroos are large macropods native to Australia and New Guinea.
+Their powerful hind legs and elastic tendons support energy-efficient hopping.   
+Females raise underdeveloped young in pouches and can pause embryo development.  
+Kangaroos appear in Australian symbols, sports, and popular culture.
+Kangaroos are harvested for meat and hides, and face road hazards.
+(webscraper) PS C:\AI Projects\ai-engineering>
+
+
+reasoning={"effort": "high", "mode": "standard"},
+
+enter url: https://en.wikipedia.org/wiki/Kangaroo
+API call took 6.942583084106445 seconds.
+ResponseUsage(input_tokens=12413, input_tokens_details=InputTokensDetails(cache_write_tokens=12410, cached_tokens=0), output_tokens=698, output_tokens_details=OutputTokensDetails(reasoning_tokens=540), total_tokens=13111)
+Key Points:
+1. Kangaroos are Australian and New Guinean marsupials in Macropodinae.
+2. Four large species are commonly called kangaroos.
+3. They hop and use their tails during movement.
+4. Females raise young in pouches and can pause embryo development.
+5. Kangaroos are Australian symbols, food sources, and commercial harvest targets.
+
+Summary Sentences:
+Australia estimated 42.8 million kangaroos in harvest areas in 2019.
+The name comes from Guugu Yimithirr gangurru.
+Large kangaroos adapted well to human-altered landscapes.
+Kangaroo meat is lean and harvested under regulations.
+Vehicle collisions pose serious risks to kangaroos and occupants.
+
+
+enter url: https://en.wikipedia.org/wiki/Kangaroo
+API call took 7.325603723526001 seconds.
+ResponseUsage(input_tokens=12413, input_tokens_details=InputTokensDetails(cache_write_tokens=0, cached_tokens=12410), output_tokens=646, output_tokens_details=OutputTokensDetails(reasoning_tokens=506), total_tokens=13059)
+Key Points:
+1. Kangaroos are large macropods native to Australia and New Guinea.
+2. Four species are commonly called kangaroos, including red and greys.
+3. They hop efficiently using powerful hind legs and elastic tendons.
+4. Kangaroos are herbivores living socially in groups called mobs.
+5. They feature prominently in Australian culture, symbols, food, and commerce.  
+
+Summary Sentences:
+Australia estimated 42.8 million kangaroos in harvest regions during 2019.       
+Females carry developing joeys in pouches and can pause embryos.
+Human interactions include harvesting, vehicle collisions, conservation, and occasional attacks.
+
+
+ebscraper/.venv/Scripts/python.exe" "c:/AI Projects/ai-engineering/webscraper/src/web_scraper.py"
+enter url: https://en.wikipedia.org/wiki/Kangaroo
+API call took 9.170772790908813 seconds.
+ResponseUsage(input_tokens=12405, input_tokens_details=InputTokensDetails(cache_write_tokens=12402, cached_tokens=0), output_tokens=796, output_tokens_details=OutputTokensDetails(reasoning_tokens=655), total_tokens=13201)
+Key Points:
+1. Kangaroos are large marsupials native to Australia and New Guinea.
+2. Four species are commonly called kangaroos, with differing habitats.
+3. Their hopping uses elastic tendons and conserves energy.
+4. Females carry developing joeys in pouches; pregnancies can pause development. 
+5. Kangaroos symbolize Australia, provide meat, and face vehicle collisions.     
+
+Summary Sentences:
+Kangaroos are diverse macropods with distinctive anatomy and behavior.
+The article describes their evolution, diets, reproduction, and social lives.    
+They hold cultural significance in Australia and support commercial uses.        
+Human activities create management concerns and vehicle risks.
+
+
+## Reasoning level
+
+**Decision:** effort = high, mode = standard
+
+**Why:**
+- Follows the 10-word rule more reliably than low
+- Points grounded (checked by me + Gemini as judge)
+- Pro mode tripled input tokens, so not worth it for summaries
+
+**Cost per summary (no caching):**
+- Long article (~12k tokens in): about $0.0016 vs. $0.0013 for low
+- Short article (~2k tokens in): reasoning dominates, about 2× low
+
+**Time:** about 7–9 seconds (low: about 3–6)
+
+**Revisit if:** volume grows enough for cost to matter, or speed matters more than rule-following

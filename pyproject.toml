@@ -1,0 +1,31 @@
+[project]
+name = "webscraper"
+version = "0.1.0"
+description = "Web Scraper"
+readme = "README.md"
+authors = [
+    { name = "Abhi-AIX", email = "aibhi.dev@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "httpx>=0.28.1",
+    "openai>=3.29.0",
+    "pydantic>=2.14.1",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.1",
+    "trafilatura>=2.3.1",
+]
+
+[project.scripts]
+webscraper = "webscraper:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
