@@ -34,7 +34,7 @@ if submit:
         for sentence in result.summary.summary:
             st.write(sentence)
         st.caption(f"({result.seconds:.1f} seconds)")
-        st.caption(f"Cost: ${result.cost:,.2f} USD")
+        st.caption(f"Cost: ${result.summary.cost:,.8f} USD")
    
         
     else:
